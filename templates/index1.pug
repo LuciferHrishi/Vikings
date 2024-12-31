@@ -1,0 +1,50 @@
+doctype html
+html
+  head
+    title Song Website
+    style
+      include ../static/style.css
+  body  
+    nav#nav
+      div.container
+        ul
+            div.logo
+              img(src="../static/logo1.png")
+              h3(style="color:white") Viking's
+            li #[a(href="/") Home] 
+            li #[a(href="/") about] 
+            li #[a(href="/") contact]
+            li #[a(href="/") find more]
+    section#introduction
+      div 
+        h3 Viking's Hero Gym
+      div 
+        h3.small Be a Hero Be a Viking Work Hard Play Hard
+
+    section#picture
+      h3.head Why Choose Us?
+      div.card
+        h3 Winner of Asian Gym Awards 2022
+        p At Vikings! We house best facilities and top of the line personal services for complete training and rejuvenation
+        div.img
+          img(src="../static/img1.png")
+      div.card
+        h3 Ultimate Power Packed Experience
+        p Get the best power gain boost your confidence and physique at Vikings!
+        div.img
+          img(src="../static/img3.png")
+      div.card
+        h3 Be forever 21
+        p Get Set Loose your fat at Vikings starting and get that shape you always dreamt of!
+        div.img
+          img(src="../static/img2.png")
+
+    footer#footer
+      h3.head Connect with us Fill the Form Today!
+      p.text !!registration before 31st of December will avail you exciting goodies and hamper to start your Viking's journey!!
+      div.container2
+          form(action="/contact",method="post" id="myform")
+                input(type="text" placeholder="enter name" name="Name")
+                input(type="email" placeholder="enter email" name="Email")
+                input(type="text" placeholder="enter message" name="Message")
+                button(type="btn") Get Set Go!

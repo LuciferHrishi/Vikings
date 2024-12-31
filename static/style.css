@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    font-family: "Open Sans", serif;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+nav{
+    background-color: #a35454;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+
+}
+
+li a{
+    text-decoration: none;
+    font-family: "Oswald", serif;
+    color: #ddd;
+}
+
+li a:hover{
+    text-decoration: none;
+    font-family: "Oswald", serif;
+    color: black;
+}
+
+li{
+    list-style-type: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+#head{
+    color: white;
+    font-weight: bold;
+}
+#introduction{
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    height: 400px;
+    background-image: url("../static/imgg1.jpg");
+    background-repeat: no-repeat;
+    filter: brightness(80%); 
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    padding-top: 100px;
+    background-size: 100% 500px;
+    color: white;
+}
+#introduction h3{
+    font-family: "Fira Sans Condensed", sans-serif;
+    letter-spacing: 2px; 
+    word-spacing: 2px; 
+    filter: brightness(100%); 
+    font-size: 35px;
+    padding: 10px;
+}
+#introduction .small{
+    font-size: 20px;
+}
+#picture{
+    background-color: rosybrown;
+    height: 400px;
+}
+#footer{
+    background-color: #a35454;
+    height: 100px;
+}
+
+#myform{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    display: flex;
+    flex-direction: row;
+}
+
+.sechead{
+    color: white;
+    font-family: "Fira Sans Condensed", sans-serif;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.sechead h3{
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+.card{
+    display: inline-block;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 30%;
+    background-color: #ffdcdc;
+    height: 273px;
+    margin: 23px 28px;
+    font-family: "Open Sans", serif;
+}
+
+.card h3{
+    text-align: center;
+    color: black;
+    font-family: "Open Sans", serif;
+}
+
+.img img{
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card p{
+    justify-content: center;
+    padding-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: x-large;
+    padding-top: 10px;
+}
+
+.input{
+    width: 30%;
+    height: 20%;
+}
+.container2{
+    background-color: #a35454;
+    padding-bottom: 10px;
+
+}
+form#myform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 20px;
+    width: 70%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the input fields */
+form#myform input[type="text"],
+form#myform input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Style the button */
+form#myform button[type="btn"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #a8d5ba; /* Green pastel */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+form#myform button[type="btn"]:hover {
+    background-color: #81c495;
+}
+
+/* Add focus effect to inputs */
+form#myform input[type="text"]:focus,
+form#myform input[type="email"]:focus {
+    border-color: #81c495;
+    outline: none;
+    box-shadow: 0 0 5px rgba(129, 196, 149, 0.5);
+}
+.text{
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 10px;
+}
